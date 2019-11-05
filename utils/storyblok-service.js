@@ -2,8 +2,8 @@ import StoryblokClient from 'storyblok-js-client'
 
 class StoryblokService {
   constructor() {
-    this.devMode = false
-    this.token = 'qvOwrwasP7686hfwBsTumAtt'
+    this.devMode = true
+    this.token = 'gOvrkpiFFCGPhAa1rQGf2Att'
     this.client = new StoryblokClient({
       accessToken: this.token,
       cache: {
@@ -64,4 +64,4 @@ class StoryblokService {
 
 const storyblokInstance = new StoryblokService()
 
-export default storyblokInstance
+export default storyblokInstance;
