@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/nav';
 import Head from '../components/head';
+import storyblokService from '../utils/storyblok-service';
 
 export default ({ children, settings = {} }) => (
     <div>
@@ -8,6 +9,7 @@ export default ({ children, settings = {} }) => (
         <Nav settings={settings} />
         <div className='util_container'>
             {children}
+            {storyblokService.bridge()}
         </div>
 
         <style jsx global>{`
